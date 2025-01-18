@@ -1,6 +1,9 @@
-import FactoryModule.ParkingSpotManagerFactory;
+package EntranceExitModules;
+
+import ParkingLotImplementation.ParkingLot;
 import ParkingLotManagerModule.ParkingLotManager;
 import ParkingSpot.BaseParkingSpot;
+import TicketManager.Ticket;
 import VehcileManager.Vehcile;
 import VehcileManager.VehcileType;
 
@@ -39,7 +42,7 @@ public class EntranceGate {
             System.out.println("Vehcile was not parked");
         }
         Ticket ticket = new Ticket(vehcile,parkingSpot.getParkingSpotId());
-        System.out.println("Ticket has been issued for vehcile :"+ vehcile.getId() + " with ticket number "+ ticket.getTicketNumber());
+        System.out.println("TicketManager.Ticket has been issued for vehcile :"+ vehcile.getId() + " with ticket number "+ ticket.getTicketNumber());
         return ticket;
 
     }

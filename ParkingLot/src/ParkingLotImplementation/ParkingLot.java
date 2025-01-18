@@ -1,7 +1,7 @@
+package ParkingLotImplementation;
+
 import FactoryModule.ParkingSpotManagerFactory;
-import ParkingLotManagerModule.FourWheelerParkingSpotManager;
 import ParkingLotManagerModule.ParkingLotManager;
-import ParkingLotManagerModule.TwoWheelerParkingSpotManager;
 import ParkingSpot.BaseParkingSpot;
 import ParkingSpot.FourWheelerParkingSpot;
 import ParkingSpot.TwoWheelerParkingSpot;
@@ -49,9 +49,6 @@ public class ParkingLot {
             return new ParkingLot(parlingLotId,twoWheelerCount, fourWheelerCount);
         return singletonInstance;
     }
-
-
-
     public List<BaseParkingSpot> getTwoWheelerParkingSpots() {
         return twoWheelerParkingSpots;
     }

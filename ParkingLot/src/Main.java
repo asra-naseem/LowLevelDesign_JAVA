@@ -1,17 +1,8 @@
-import FactoryModule.ParkingSpotManagerFactory;
-import ParkingLotManagerModule.FourWheelerParkingSpotManager;
-import ParkingLotManagerModule.ParkingLotManager;
-import ParkingLotManagerModule.TwoWheelerParkingSpotManager;
-import ParkingSpot.BaseParkingSpot;
-import ParkingSpot.FourWheelerParkingSpot;
-import ParkingSpot.TwoWheelerParkingSpot;
-import ParkingStrategyModule.NearestAvailableParkingSpotStrategy;
-import ParkingStrategyModule.ParkingStrategy;
+import EntranceExitModules.EntranceGate;
+import ParkingLotImplementation.ParkingLot;
+import TicketManager.Ticket;
 import VehcileManager.Vehcile;
 import VehcileManager.VehcileType;
-
-import java.util.ArrayList;
-import java.util.List;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -42,6 +33,7 @@ public class Main {
             System.out.println("Vehicle: " + carTicket.getVehcile().getId());
             System.out.println("Parked at Spot ID: " + carTicket.getParkingSpotId());
             System.out.println("Timestamp: " + carTicket.getTimeStamp());
+
         } else {
             System.out.println("Failed to park bike.");
         }
