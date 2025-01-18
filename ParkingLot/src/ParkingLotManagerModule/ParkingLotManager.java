@@ -16,10 +16,13 @@ public  ParkingLotManager(List<BaseParkingSpot> spots,ParkingStrategy strtegyObj
 public BaseParkingSpot findParkingSpace(){
     return strtegyObj.findParking(spots);
 }
-public void parkVehcile(Vehcile vehcile){
+public boolean parkVehcile(Vehcile vehcile){
     BaseParkingSpot spot = findParkingSpace();
-   if(spot.parkVehcile(vehcile))
-       System.out.println("Spot number:"+spot.getParkingSpotId());
+   if(spot.parkVehcile(vehcile)) {
+       System.out.println("Spot number:" + spot.getParkingSpotId());
+       return true;
+   }
+   return false;
 
 }
 public void removeVehcile(Vehcile v){
