@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public interface ExternalButtonDispatcherStrategy {
+import java.util.List;
+
+public interface ExternalButtonDispatcherStrategy {
+    public void dispatchingStrategy(List<ElevatorController> elevatorController, int floor, Direction direction);
 }
