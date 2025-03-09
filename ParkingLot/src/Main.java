@@ -26,7 +26,7 @@ public class Main {
 //        fourWheelerParkingManager .parkVehcile(vehcile);
         ParkingLot singletonInstance = ParkingLot.getSingletonInstance(1234,5,5);
         EntranceGate entranceGate1 = new EntranceGate(singletonInstance);
-        Vehcile vehcile = new Vehcile("Camry",VehcileType.FOURWHEELER);
+        Vehcile vehcile = new Vehcile("Camryy",VehcileType.FOURWHEELER);
         Ticket carTicket = entranceGate1.issueTicket(vehcile);
         if (carTicket != null) {
             System.out.println("Car parked successfully!");
